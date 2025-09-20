@@ -1,0 +1,99 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #fceabb, #f8b500, #fceabb);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #444;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  color: #6a5acd;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form button, .filter select {
+  padding: 10px;
+  border: 2px solid #ffd1dc;
+  border-radius: 12px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+form button {
+  background: #ffd1dc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #ffb6c1;
+}
+
+.filter {
+  margin: 15px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f0eaff;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background: #d6f5d6;
+  color: #555;
+}
+
+li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#glitter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}

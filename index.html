@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic To-Do List</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🌸 My To-Do List </h1>
+    
+    <!-- Form Input -->
+    <form id="todo-form">
+      <input type="text" id="task-input" placeholder="Tulis kegiatanmu..." required>
+      <input type="date" id="date-input" required>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <!-- Filter -->
+    <div class="filter">
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="all">Semua</option>
+        <option value="active">Belum Selesai</option>
+        <option value="completed">Selesai</option>
+      </select>
+    </div>
+
+    <!-- Display To-Do -->
+    <ul id="todo-list"></ul>
+  </div>
+
+  <!-- Canvas untuk glitter -->
+  <canvas id="glitter"></canvas>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
